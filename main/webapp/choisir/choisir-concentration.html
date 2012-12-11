@@ -1,0 +1,61 @@
+<lift:surround at="content" with="default">
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          
+
+				<lift:Menu.builder expandAll="true" />
+
+        </div><!--/span-->
+        <div class="span9">
+          <div class="hero-unit">
+            <h1><lift:Menu.title /></h1>
+            <p>Liste des concentrations Informatique</p>
+          </div>
+ 
+          <h2>Début</h2>
+          <ul id="navlist">
+            <li><a class="btn btn-custom" href="#">2008</a></li>
+            <li><a class="btn btn-custom" href="#">2009</a></li>
+            <li><a class="btn btn-custom" href="#">2010</a></li>
+            <li><a class="btn btn-custom" href="#">2011</a></li>
+            <li><a class="btn btn-custom" href="#">2012</a></li>
+          </ul>
+
+
+
+          <section class="main">
+            <div class="user">
+              <h5>Classique</h5>
+              <ul>
+                <li><a href="index.html">Gestion</a></li>
+                <li><a href="index.html">International</a></li>
+                <li><a href="index.html">Innovation</a></li>
+                <li><a href="index.html">Interface</a></li>
+              </ul>
+            </div>
+          </section>
+          <ul class="nav nav-pills nav-stacked">
+  			<li class="dropdown">
+  			<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+	  			Classique 
+	  			<b class="caret"></b>
+  			</a>
+  			<ul aria-labelledby="dropdownMenu" class="dropdown-menu" role="menu">
+      			<li><a href="#" tabindex="-1">Gestion</a></li>
+                <li><a href="#" tabindex="-1">International</a></li>
+
+    		</ul>
+  			</li>
+            <li><a href="../visualiser/concentration_securite.html">Securite Informatique</a></li>
+            <li><a href="../visualiser/concentration_systeme_embarques.html">Systemes embarques et Aeronautique</a></li>
+		  </ul>
+          
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr />
+    </div><!--/.fluid-container-->
+
+</lift:surround>

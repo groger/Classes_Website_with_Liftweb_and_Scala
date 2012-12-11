@@ -1,0 +1,9 @@
+.member img 
+{
+	display: inline-block;
+}
+
+.team li
+{
+	list-style-type: none;
+}

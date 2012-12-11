@@ -1,0 +1,135 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="fr"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="fr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap-responsive.min.css" />
+
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/cheminement.css" />
+
+    <script src="vendors/modernizr/modernizr.min.js"></script>
+</head>
+<body class="lift:content_id=content">
+    <div data-lift="surround?with=default;at=content" id="content">
+
+        <link data-lift="head" rel="stylesheet" href="/css/cheminement.css" />
+
+        <div data-lift="Cheminement">
+
+            <a class="addresse" href="#">Link</a>
+            <a class="addresse2" href="#">Link</a>
+
+            <ol class="cheminement" id="cheminement">
+                <li class="session">
+                    <span class="periode">Automne</span>
+                    <span class="annee">2009</span>
+                    <div class="total-credits">15</div>
+                    <ul class ="liste-cours">
+                        <li class="cours" id="INF1005C" draggable="true">
+                            <span class="sigle">INF1005C</span>
+                            <span class="titre">Programmation procédurale</span>
+                            <span class="credits">3</span>
+
+                            <ul class="disponibilite">
+                                <li>Automne</li>
+                            </ul>
+
+                            <ul class="tripplet">
+                                <li class="theorie">3</li>
+                                <li class="lab">3</li>
+                                <li class="perso">3</li>
+                            </ul>
+                            <ul class="ua">
+                                <li class="genie">2</li>
+                                <li class="conception">1</li>
+                                <li class="math">0</li>
+                                <li class="science">0</li>
+                                <li class="complementaire">0</li>
+                            </ul>
+
+                            <ul class="pre-requis">
+                                <li>MTH1101</li>
+                            </ul>
+                            <ul class="co-requis">
+                                <li>MTH1006</li>
+                            </ul>
+
+                            <form method="POST" id="form-deplacer">
+                                <!--<input type="submit" name="termine" value="terminé" class="termine">
+                                <input type="submit" name="suprimer" value="suprimer"> -->
+                                <div id="deplacer" class="deplacer">Deplacer
+                                </div>
+                                <input type="submit" name="deplacer" value="deplacer">
+                            </form>
+
+                            <form method="POST" id="form-termine">
+                                <input type="submit" name="termine" value="terminé" class="termine">
+
+                            </form>
+
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+            
+        
+
+        <legend>
+            <div class="prerequis">Pré-requis</div>
+            <div class="corequis">Co-requis</div>
+            <div class="subsequent">Subséquent</div>
+            <div class="mismatch">Invalide</div>
+        </legend>
+
+
+        <form >
+            Ajouter une session
+            <input type="submit" id="ajout-session" name="nom" class=" btn btn-primary ajouter-session">
+        </form>
+
+        <form >
+            Cloner le Cheminement
+            <input type="submit" id="cloner-cheminement" name="nom" class=" btn btn-primary cloner-cheminement">
+        </form>
+
+        <!--<form data-lift="TaskSnippetFormulaire.newTask?form=post">
+        <div class="input-append">
+            <input class="span2" type="text" name="nom">
+            <input class="btn btn-primary" type="submit" value="Créer"/>
+        </div>
+    </form>-->
+        
+
+</div>
+<!--         Ajouter un cours
+        http://stackoverflow.com/questions/10952482/how-to-change-a-forms-action-in-lift
+        <div class="lift:AjoutCours">
+        <form method="post" class="lift:form.ajax">
+            <input type="text" name="cours" list="cours-offerts" placeholder="MTH1101">
+            <datalist id="cours-offerts">
+                <option value="MTH1101">
+                <option value="MTH1102">
+            </datalist>
+            <label>Session
+                <select name="deplacer">
+                    <option value="1">Session 2011</option>
+                </select>
+            </label>
+            <input type="submit" name="ajouter">
+        </form>
+         <div id="result"></div>
+        <div> -->
+
+
+    </div>
+</body>
+</html>

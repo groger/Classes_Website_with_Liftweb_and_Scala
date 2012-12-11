@@ -1,0 +1,49 @@
+<!doctype html>
+<body data-lift="surround?with=default;at=content">
+
+    <form class="form-horizontal" data-lift="ModifierCours.modifier?form=post">
+
+        <h1 class="sigle">MTH1101</h1>
+
+        <fieldset>
+            <legend>Info générales</legend>
+            <div class="control-group">
+                <label class="control-label" for="titre">Titre</label>
+                <div class="controls">
+                    <input type="text" id="titre" name="titre" value="Calcul I">
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Triplet</legend>
+            <div class="control-group">
+                <label class="control-label" for="triplet-theorie">Théorie</label>
+                <div class="controls">
+                    <input type="number" step="0.5" id="triplet-theorie" name="triplet-theorie" value="3">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="triplet-lab">Laboratoire</label>
+                <div class="controls">
+                    <input type="number" step="0.5" id="triplet-lab" name="triplet-lab" value="1.5">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="triplet-perso">Personnel</label>
+                <div class="controls">
+                    <input type="number" step="0.5" id="triplet-perso" name="triplet-perso" value="4.5">
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="control-group">
+            <div class="controls">
+                <button type="submit" class="btn btn-primary">Sauvegarder</button>
+                <a href="#" class="annuler btn btn-danger">Annuler</a>
+            </div>
+        </div>
+    </form>
+</body>

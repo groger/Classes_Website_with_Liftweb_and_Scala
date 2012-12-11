@@ -1,0 +1,275 @@
+/*.cheminement,
+.session .liste-cours
+{
+    margin: 0;
+    list-style: none;
+}
+
+.session
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.cours
+{
+    border-color: black;
+}
+
+.placeholder
+{
+    border-color: white;
+}
+
+.placeholder:hover
+{
+    border-style: dashed;
+    border-color: black;
+}
+
+.placeholder,
+.cours
+{
+    text-align: center;
+    display: block;
+    border-style: solid;
+    border-width: 1px;
+    height: 30px;
+}
+
+.cours .titre,
+.cours .disponibilite,
+.cours .credits,
+.cours .pre-requis, 
+.cours .co-requis,
+.cours .min-credit,
+.cours .ua,
+.cours .tripplet,
+.cours .suprimer,
+.cours .deplacer,
+.cours-options .detail
+{
+    display: none;
+}
+
+html.no-js .session,
+html.no-js  .cours,
+html.no-js  .cours .deplacer select,
+html.no-js .cours
+{
+    width: 200px;
+}
+
+html.no-js  .cours .deplacer select
+{
+    display: block;
+}
+
+html.js .session,
+html.js .cours,
+html.js .cours .deplacer select
+{
+    width: 75px;
+}
+
+.cours form,
+.cours-options form,
+.cours-options select
+{
+    margin: 0;
+
+}
+
+.cours:hover .modifier
+{
+    display: block;
+}
+
+html.no-js .cours
+{
+    height: 150px;
+}
+
+.cours .modifier,
+html.js .cours form
+{
+    display: none;
+}
+
+.cours.cours-terminer {
+    background: grey;
+}
+
+.cours.prerequis {
+    background: blue;
+}
+
+.cours.corequis {
+    background: yellow;
+}
+
+.cours.subsequent {
+    background: greenyellow;
+}
+
+.cours.mismatch {
+    background: red;
+}
+
+.cours.wrong-session {
+    background: red;
+}
+
+.session.disponible {
+    background: green;
+}
+
+legend div{ 
+    width: 200px; 
+    height: 50px; 
+    display: inline-block;
+    text-align: center;
+}
+legend .prerequis { background-color: blue; }
+legend .corequis { background-color: yellow; }
+legend .subsequent { background-color: greenyellow; }
+legend .mismatch { background-color: red; }
+*/
+
+.cheminement,
+.session .liste-cours
+{
+    margin: 0;
+    list-style: none;
+}
+
+.session
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.cours
+{
+    border-color: black;
+}
+
+.placeholder
+{
+    border-color: white;
+}
+
+.placeholder:hover
+{
+    border-style: dashed;
+    border-color: black;
+}
+
+.placeholder,
+.cours
+{
+    text-align: center;
+    display: block;
+    border-style: solid;
+    border-width: 1px;
+    height: 30px;
+}
+
+.cours .titre,
+.cours .disponibilite,
+.cours .credits,
+.cours .pre-requis,
+.cours .co-requis,
+.cours .min-credit,
+.cours .ua,
+.cours .tripplet,
+.cours .suprimer,
+.cours-options .detail
+{
+    display: none;
+}
+
+html.no-js .session,
+html.no-js  .cours,
+html.no-js  .cours .deplacer select,
+html.no-js .cours
+{
+    width: 200px;
+}
+
+html.js .session,
+html.js .cours,
+html.js .cours .deplacer select
+{
+    width: 75px;
+}
+
+.cours form,
+.cours-options form,
+.cours-options select
+{
+    margin: 0;
+}
+
+.cours:hover .modifier
+{
+    display: block;
+}
+
+html.no-js .cours
+{
+    height: 150px;
+}
+
+.cours .modifier,
+html.js .cours form
+{
+    display: none;
+}
+
+.cours .modifier,
+html.js .cours:hover form
+{
+    display: block;
+}
+
+.cours.cours-terminer {
+    background: grey;
+}
+
+.cours.prerequis {
+    background: blue;
+}
+
+.cours.corequis {
+    background: yellow;
+}
+
+.cours.subsequent {
+    background: greenyellow;
+}
+
+.cours.mismatch {
+    background: red;
+}
+
+.cours.wrong-session {
+    background: red;
+}
+
+.session.disponible {
+    background: green;
+}
+
+legend div{
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+}
+legend .prerequis { background-color: blue; }
+legend .corequis { background-color: yellow; }
+legend .subsequent { background-color: greenyellow; }
+legend .mismatch { background-color: red; }

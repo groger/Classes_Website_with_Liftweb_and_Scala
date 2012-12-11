@@ -1,0 +1,46 @@
+<lift:surround with="default" at="content">
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          
+
+				<lift:Menu.builder expandAll="true">
+
+        </div><!--/span-->
+        <div class="span9">
+          <div class="hero-unit">
+            <h1><lift:Menu.title></h1>
+            <p>Page d'accueil présentant les informations de l'utilisateur</p>
+          </div>
+          
+          <ul class="thumbnails">
+              <li class="span4">
+                <div class="thumbnail">
+                  <div class="caption">
+                    <h3>Cheminement</h3>
+                    <p>Modifier le Génie, la concentration ou la date de début</p>
+                    <p><a href="../programmes.html" class="btn btn-primary">Modifier</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="span4">
+                <div class="thumbnail">
+                  <div class="caption">
+                    <h3>Identifiants</h3>
+                    <p>Modifier le mot de passe ou le login</p>
+                    <p><a href="#" class="btn btn-primary">Modifier</a></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+        </div><!--/span-->
+      </div><!--/row-->
+
+
+
+      <hr>
+    </div><!--/.fluid-container-->
+
+</lift:surround>
