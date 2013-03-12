@@ -6,6 +6,6 @@ object EquipeProjet
 {
   val members = List(
     Membre("Alexandre","Lision","alexandre.lision@polymtl.ca"),
-    Membre("Alexandre","Lision","alexandre.lision@polymtl.ca")
+    Membre("Gwendoline","Roger","gwendoline.roger@polymtl.ca")
   )
 }
